@@ -1,0 +1,42 @@
+.container {
+  position: absolute;
+  top: 70%;
+  width: 100px;
+  height: 200px;
+  transform: skew(15deg);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.container .item {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%) skew(-15deg);
+}
+
+.container:nth-child(1) {
+  left: 50%;
+}
+.container:nth-child(2) {
+  left: calc(50% + 110px);
+}
+.container:nth-child(3) {
+  left: calc(50% + 220px);
+}
+.container:nth-child(4) {
+  left: calc(50% + 330px);
+}
+
+.first {
+  left: -5%;
+}
+.second {
+  left: 10%;
+}
+.third {
+  left: 20%;
+}
+.fourth {
+  left: 170%;
+}
